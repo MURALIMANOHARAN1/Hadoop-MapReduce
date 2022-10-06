@@ -1,0 +1,11 @@
+  995  ifconfig
+  996  hadoop fs -copyFromLocal Modi.txt /Mano
+  997  hadoop fs -mkdir /SpeechAnalysis
+  998  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordcount /Modi.txt /SpeechAnalysis/wordcount
+  999  hadoop jar hadoop-mapreduce-examples-2.2.0.jar 
+ 1000  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordcount /Mano /SpeechAnalysis/wordcount
+ 1001* 
+ 1002  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmedian /Mano /SpeechAnalysis/wordmedian
+ 1003  hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordstandarddeviation /Mano /SpeechAnalysis/wordstandarddeviation
+ 1004  history
+
